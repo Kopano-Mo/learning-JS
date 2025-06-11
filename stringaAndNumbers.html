@@ -11,11 +11,16 @@
         var text1 = "10";
         var text2 = "2";
 
-        document.getElementById("outputText").innerHTML = text1 - text2;
-    
+        if(isNaN(num1) || isNaN(NUM2)){ 
+        document.getElementById("outputText").innerHTML = "You have not entered a vaild number.Please try again. ";
+        }else{ 
+            document.getElementById("outputText").innerHTML = num1 / num2;
+        }
     function stringToNumber(text){
         return parseInt(text);
     }
+}
+
 
     </script>
 </body>
