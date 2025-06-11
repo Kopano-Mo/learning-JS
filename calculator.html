@@ -40,6 +40,8 @@
   </table>  
 
   <script>
+    var newLine = true; //Boolean variable. Determines if the next thing the user type should be on a new  line
+    //Event handler for when any digit button is pressed 
     function  digitBtnPressed(button){
         if(newLine){
             document.getElementById("inputBox").value = button;
@@ -48,6 +50,12 @@
         var currentValue = document.getElementById("inputBox").value;
         document.getElementById("inputBox").value = button;
     }
+}
+
+//Event handler for when the AC button is pressed 
+function btnPressed(){
+    document.getElementById("inputBox").value = 0;
+    newLine = true ;
 }
   </script>
 </body>
