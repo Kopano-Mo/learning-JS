@@ -16,6 +16,17 @@
       function verifyUser() {
          var Username = document.getElementById("usernameInput").vaule;
          var password = document.getElementById("passwordInput").vaule;
+       checkUserCreds(Username,password);
+      }
+
+      function checkUserCreds(Username,password) {
+         var systemUsername = "Bond";
+         var systemPassword = "007";
+         if (Username == system && password == systemPassword){
+            document.getElementById("message").innerHTML = "Correct. loggin you in...";
+         }else{
+        document.getElementById("message").innerHTML = "Username or password are incorrect";
+         }
       }
     </script>
 </body>
